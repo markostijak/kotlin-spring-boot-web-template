@@ -1,8 +1,14 @@
+package com.example.web.hello;
+
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Created by Marko Stijak on 14.6.2020.
- */
 class JavaModelTest {
+
+    @Test
+    public void test() {
+        JavaModel javaModel = new JavaModel("java model");
+        assertEquals("java model", javaModel.getValue());
+    }
 
 }
